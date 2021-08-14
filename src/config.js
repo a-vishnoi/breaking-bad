@@ -1,0 +1,1 @@
+export const BREAKING_BAD_API='https://www.breakingbadapi.com/api';
