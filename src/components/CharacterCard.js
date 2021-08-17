@@ -11,7 +11,7 @@ const CharacterCard = ({character}) => {
 		getQuoteByCharacterName(name)
 			.then(response => setQuotes(response.data))
 			.catch(error => console.log(error))
-	}, []);
+	}, [name]);
 	
 	console.log(quotes);
 	
@@ -24,6 +24,7 @@ const CharacterCard = ({character}) => {
 					  <img
 						  src={img}
 						  className="img-fluid"
+						  alt="Character"
 					  />
 				  </div>
 				  <div className="card-body">
